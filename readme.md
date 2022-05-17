@@ -4,6 +4,9 @@
 
 2.- npm install --save-dev jest
 
+3.- Correr las pruebas npm test
+
+
 Herramientas
 
 Basado en las instrucciones de la siguiente URL de programa de capacitacion por LaunchX
