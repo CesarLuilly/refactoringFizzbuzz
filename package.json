@@ -4,7 +4,7 @@
   "description": "1.- Instalamos dependencias con npm install",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CesarLuilly/refactoringFizzbuzz/issues"
   },
-  "homepage": "https://github.com/CesarLuilly/refactoringFizzbuzz#readme"
+  "homepage": "https://github.com/CesarLuilly/refactoringFizzbuzz#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
 }
