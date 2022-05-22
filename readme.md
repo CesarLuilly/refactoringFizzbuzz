@@ -111,3 +111,23 @@ Se creará la nueva funcionalidad dentro de `FizzbuzzService`, misma que será u
 
 **[Refactoring Parte 4](https://github.com/LaunchX-InnovaccionVirtual/MissionNodeJS/blob/main/semanas/semana_4/4_contribution.md)**
 
+## **Conclusiones. Apuntes propios**
+
+1. Por cada metodo dentro del archivo del **controlador** tiene su propio metodo dentro del archivo de **service**.
+**Ojo**. Y dentro del metodo de service no accede a datos del modelo, si no que cuando se manda a llamar el metodo del controlador se sacan los datos primero del modelo y esos datos se pasan al service para que el servicio haga su trabajo correspondiente.
+
+1. Por cada metodo de **endpoint** dentro del archivo de server tiene su propio metodo dentro del archivo de **controlador**.
+
+1. Las responsabilidades dentro del **endpoint** solo es sacar los datos que recibimos de la fuente externa(Navegador) de quien lo invoca para que se invoque internamente el controlador y esa respuesta se la mandemos a quien invoco el endpoint.
+
+1. Las responsabilidades dentro del **controlador** son:
+    - Sacar los datos del modelo
+    - Procesar esos datos y devolver el resultado a traves de un metodo el archivo de service
+    - retornar el resultado esperado al endpoint
+
+NOTA. 
+- El **Servicio** no accede a datos del modelo, solo tiene la logica para que a partir de unos datos que se le pasan pueda hacer su trabajo.
+
+- El **modelo** solo saca datos.
+
+
