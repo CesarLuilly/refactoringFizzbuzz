@@ -6,6 +6,18 @@
 
 3.- Correr las pruebas npm test
 
+4.- npm install eslint --save-dev
+
+5.- Ejecuta el comando para generar la configuración del linter:
+npm init @eslint/config
+
+Es indispensable revisar la documentación de cada dependencia que usemos: https://eslint.org/docs/rules/
+
+6.- Configuramos las rules del archivo de linter y la seccion de script del package.json
+
+7.- Corremos los siguientes comandos que se personalizaron anteriormente
+npm run linter
+npm run linter-fix
 
 Herramientas
 
