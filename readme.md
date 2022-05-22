@@ -13,7 +13,7 @@
 5.- Ejecuta el comando para generar la configuración del linter:
 npm init @eslint/config
 
-Es indispensable revisar la documentación de cada dependencia que usemos: https://eslint.org/docs/rules/
+`Es indispensable revisar la documentación de cada dependencia que usemos: https://eslint.org/docs/rules/`
 
 6.- Configuramos las rules del archivo de linter y la seccion de script del package.json
 
@@ -41,7 +41,7 @@ graph TD;
     ExplorerController-->Server
 ```
 
-- Instalamos npm install express --save
+1.- Instalamos npm install express --save
 
 2.- Creamos el archivo server para acceder a los controladores mediante los endpoint que tendra
 
@@ -51,9 +51,9 @@ graph TD;
 
 4.- Accedemos a nuestro endpoint http://localhost:3000/v1/explorers/node
 
-4.- Automatiza tu package.json para automatizar tu server, agrega la siguiente línea dentro de scripts: "server": "node ./lib/server.js". Después solo tendrás que usar npm run server para iniciar tu servidor.
+5.- Automatiza tu package.json para automatizar tu server, agrega la siguiente línea dentro de scripts: "server": "node ./lib/server.js". Después solo tendrás que usar npm run server para iniciar tu servidor.
 
-5.- Ejecutamos el comando npm run server
+6.- Ejecutamos el comando npm run server
 
 Basado en las instrucciones de la siguiente URL de programa de capacitacion por LaunchX
 
