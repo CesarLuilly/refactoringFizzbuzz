@@ -59,7 +59,40 @@ Basado en las instrucciones de la siguiente URL de programa de capacitacion por 
 
 **[Refactoring Parte 2](https://github.com/LaunchX-InnovaccionVirtual/MissionNodeJS/blob/main/semanas/semana_4/2_api_fizzbuzz_parte2.md)**
 
+## Parte 3
 
-Herramientas
+# Diseño actual
+
+```mermaid
+graph TD;
+    Reader-->ExplorerService;
+    FizzbuzzService;
+    ExplorerService-->ExplorerController
+    FizzbuzzService-->ExplorerController
+    ExplorerController-->Server
+```
+
+# Flujo de Nueva funcionalidad
+
+```mermaid
+graph TD;
+    FizzbuzzService-->ExplorerController;
+    ExplorerController-->Server
+```
+
+De entrada el único punto de conexión que debe haber entre nuestra funcionalidad y el server será el `ExplorerController`. Así vamos a mantener una organización y separación de responsabilidades adecuado. 
+
+Se creará la nueva funcionalidad dentro de `FizzbuzzService`, misma que será usada en el `ExplorerController` y de ahí podrá ser implementada en el server.
+
+1. Crea un nuevo método `static applyValidationInNumber(number){` en `FizzbuzzService`.
+  - Implementa la validación de fizzbuzz, solo regresa el valor: "Fizz", "Buzz", "Fizzbuzz" o el mismo número recibido.
+
+2. Crea un nuevo método en `ExplorerController` que reciba un número y use la función del `FizzbuzzService` que acabas de crear.
+3. Finalmente usa este método dentro de un nuevo endpoint en el server. Aquí te dejo un ejemplo de cómo se debería ver tu nuevo endpoint:
+
+![image](https://user-images.githubusercontent.com/17634377/164956665-16a96f81-83ef-4c24-8229-e25a98c97993.png)
+
+**[Reafactoring Parte 3](https://github.com/LaunchX-InnovaccionVirtual/MissionNodeJS/blob/main/semanas/semana_4/3_nuevo_feature_fizzbuzz_parte3.md)**
+
 
 
