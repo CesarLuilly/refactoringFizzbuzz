@@ -213,5 +213,5 @@ TOKEN_BOT_TELEGRAM="your token"
 ```
 
 10. Refactorizar el codigo de Telegram en el controlador ExplorerControllers y correr la aplicacion con `node app.js`
-
+[Basado en el tutorial de LaunchX, Parte Telegram](https://github.com/LaunchX-InnovaccionVirtual/MissionNodeJS/blob/main/semanas/semana_5/bot.md)
 
