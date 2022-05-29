@@ -141,7 +141,7 @@ NOTA.
 
 <img width="560" alt="image" src="https://user-images.githubusercontent.com/17634377/166179366-739dc4df-d992-4fac-bd9b-91a31b6e9e50.png">
 
-# Parte 2: Fizzbuzz
+# Parte 6: Fizzbuzz
 
 1. Abre tu proyecto de fizzbuzz 
 2. Instala la dependencia: `npm install node-telegram-bot-api --save`
@@ -202,6 +202,15 @@ Verifica:
 
 8. Refactoriza el snippet de código anterior y envíalo al ExplorerController.
 9. Valida que al enviar la palabra "node" o "java", regreses al bot la lista de nombres de los explorers de esa misión. Recuerda que el bot solo puede recibir un string, tendrás que armar ese string con los nombres. No olvides agregar una prueba para generar ese string. No es necesario que hagas pruebas de la funcionalidad del bot.
+
+3.- En caso de no tener la carpeta .env, al ejecutar `node app.js` mandara el siguiente error
+![error env](./imgReadme/errorEnv.jpg)
+**por eso para ejecutar este proyecto hay que crear este archivo con el Key y Token correspondiente de Trello**
+- El archivo .env debe tener la escructura 
+
+```
+TOKEN_BOT_TELEGRAM="your token"
+```
 
 
 
