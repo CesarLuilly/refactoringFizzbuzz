@@ -212,5 +212,6 @@ Verifica:
 TOKEN_BOT_TELEGRAM="your token"
 ```
 
+10. Refactorizar el codigo de Telegram en el controlador ExplorerControllers y correr la aplicacion con `node app.js`
 
 
